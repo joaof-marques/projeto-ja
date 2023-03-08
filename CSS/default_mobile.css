@@ -27,6 +27,9 @@ header{
     text-align: right;
     height: 80px;
     background-image: linear-gradient(to bottom, var(--rosa-padrao) 20%, white);
+    position: sticky;
+    top: 0px;
+    z-index: -1;
 }
 
 .material-symbols-outlined {
@@ -64,8 +67,8 @@ main{
 }
 
 #welcome p {
-    position: absolute;
-    top: 200px;
+    position: fixed;
+    top: 250px;
     left: 20px;
     width: 200px;
     text-align: center;
@@ -83,9 +86,17 @@ main{
     height: 1500px;
 }
 
+div.page01, 
+div.page02{
+    display: flex;
+    flex-flow: row wrap;
+}
+
 div.card img{
     width: 100px;
     border-radius: 50%;
 }
-
+div.card>p{
+    font-size: 1.7rem;
+}
 
