@@ -41,9 +41,15 @@ header{
 }
 
 /* MAIN */
+main{    
+    font-family: var(--fonte-padrao);
+}
+
+/*  Main > Welcome */
+
 #welcome{
     background: white url(../imagens/welcome-cortada.png) right bottom no-repeat fixed;
-    background-size: 45vh;
+    background-size: 38vh;
     height: 700px;
     width: 96vw;
     position: relative;
@@ -55,19 +61,31 @@ header{
     left: 50%;
     transform: translate(-50%, 0);
     width: 200px;
-    margin: 20px auto;
-    display: block;
 }
 
+#welcome p {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Main > Nossos tratamentos */
 
 #nossos-tratamentos{
     text-align: center;
-    font-family: var(--fonte-manuscrito);
     font-size: 3rem;
     color: var(--marrom-bordo);
+    font-family: var(--fonte-manuscrito);
     background-color: var(--rosa-padrao);
     
-
     height: 1500px;
 }
+
+div.card img{
+    width: 100px;
+    border-radius: 50%;
+}
+
 
