@@ -14,67 +14,76 @@
 
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="js/modal.js" defer></script>
 </head>
 <body>
-    <header>
-        <span class="material-symbols-outlined">menu</span>
-    </header>
-    <main>
-        <section id="welcome">
-            <img src="imagens/logo_ja.png" alt="Logo Janaína Amaral Estética Avançada" id="logo-welcome">
-            <p>Com mais de 21 anos de experiência, tenho o procedimento certo para o seu bem-estar</p>
-        </section>
-        <section id="nossos-tratamentos">
-            <h1>Nossos tratamentos</h1>
+  <header>
+      <span class="material-symbols-outlined">menu</span>
+  </header>
+  <main>
+    <section id="welcome">
+      <img src="imagens/logo_ja.png" alt="Logo Janaína Amaral Estética Avançada" id="logo-welcome">
+      <p>Com mais de 21 anos de experiência, tenho o procedimento certo para o seu bem-estar</p>
+    </section>
+    <section id="nossos-tratamentos">
+      <h1>Nossos tratamentos</h1>
 
-            <div id="page01">
-                <div class="card card1">
-                    <img src="imagens/procedimento.jpg" alt="">
-                    <p>BB Glow</p>
-                </div>
-                <div class="card card2">
-                    <img src="imagens/procedimento.jpg" alt="">
-                    <p>Bio Placenta</p>
-                </div>
-                <div class="card card3">
-                    <img src="imagens/procedimento.jpg" alt="">
-                    <p>Up Glúteo</p>
-                </div>
-                <div class="card card4">
-                    <img src="imagens/procedimento.jpg" alt="">
-                    <p>Plasma Lifting</p>
-                </div>
-            </div>
+      <div id="page01">
+        <div class="card card1" onclick="alteraTexto(1)">
+          <img src="imagens/procedimento.jpg" alt="">
+          <p>BB Glow</p>
+        </div>
+        <div class="card card2" onclick="alteraTexto(2)">
+          <img src="imagens/procedimento.jpg" alt="">
+          <p>Bio Placenta</p>
+        </div>
+        <div class="card card3" onclick="alteraTexto(3)">
+          <img src="imagens/procedimento.jpg" alt="">
+          <p>Up Glúteo</p>
+        </div>
+        <div class="card card4" onclick="alteraTexto(4)">
+          <img src="imagens/procedimento.jpg" alt="">
+          <p>Plasma Lifting</p>
+        </div>
+      </div>
 
-            <div id="page02">
-                <div class="card card1">
-                    <img src="imagens/procedimento.jpg" alt="">
-                    <p>Hyaluron Pen</p>
-                </div>
-                <div class="card card2">
-                    <img src="imagens/procedimento.jpg" alt="">
-                    <p>Peeling</p>
-                </div>
-                <div class="card card3">
-                    <img src="imagens/procedimento.jpg" alt="">
-                    <p>Criolipólise</p>
-                </div>
-                <div class="card card4">
-                    <img src="imagens/procedimento.jpg" alt="">
-                    <p>Limpeza de Pele</p>
-                </div>
-            </div>
+      <div id="page02">
+        <div class="card card1" onclick="alteraTexto(5)">
+          <img src="imagens/procedimento.jpg" alt="">
+          <p>Hyaluron Pen</p>
+        </div>
+        <div class="card card2" onclick="alteraTexto(6)">
+          <img src="imagens/procedimento.jpg" alt="">
+          <p>Peeling</p>
+        </div>
+        <div class="card card3" onclick="alteraTexto(7)">
+          <img src="imagens/procedimento.jpg" alt="">
+          <p>Criolipólise</p>
+        </div>
+        <div class="card card4" onclick="alteraTexto(8)">
+          <img src="imagens/procedimento.jpg" alt="">
+          <p>Limpeza de Pele</p>
+        </div>
+      </div>
 
-        </section>
+      
+    </section>
 
-    </main>
-    <footer>
+  </main>
+  <footer>
 
-    </footer>
+  </footer>
+
+  <dialog>
+    <span class="material-symbols-rounded" id="btnFechar">close</span>
+    <img id="modalImg" src="imagens/procedimento.jpg" alt="">
+    <h3 id="modalTitle">Nome do procedimento</h3>
+    <p id="modalText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nesciunt maiores tempora repudiandae! Odio, praesentium? Nemo repellendus itaque ex laboriosam? Tenetur incidunt in consectetur ipsa labore distinctio voluptas doloremque nihil.</p>
+    <button id="btnAgendar" >Agende agora</button>
+  </dialog>
+
 </body>
 </html>
 
-
-
-
-<!-- <span class="material-symbols-rounded">menu</span>  Ícone de Menu   --> 
