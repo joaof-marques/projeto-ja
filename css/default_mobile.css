@@ -77,6 +77,7 @@ main{
 /* Main > Nossos tratamentos */
 
 #nossos-tratamentos{
+    padding-top: 32px;
     text-align: center;
     font-size: 3rem;
     color: var(--marrom-bordo);
@@ -84,6 +85,9 @@ main{
     background-color: var(--rosa-padrao);
     
     height: 1500px;
+}
+#nossos-tratamentos h1{
+    margin-bottom: 32px;
 }
 
 div#page01, 
@@ -94,13 +98,13 @@ div#page02{
     grid-template-areas: "card1 card2" "card3 card4";
     justify-items: center;
     align-items: center;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
 
     margin-top: 15px;
 }
 
-.card{
-    border: 2px solid #723c3c59;
+.card{/* 
+    border: 2px solid #723c3c59; */
     display: inline-block;
     padding: 10px;
     width: 35vw;
@@ -112,8 +116,8 @@ div.card img{
     width: 100px;
     border-radius: 50%;
 }
-div.card>p{
-    font-size: 1.7rem;
+div.card>h4{
+    font-size: 1.5rem;
 }
 
 .card1{
@@ -139,15 +143,16 @@ dialog{
     border: 3px solid var(--marrom-bordo);
     border-radius: 20px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
-
     display: flex;
     flex-flow: column nowrap;
     row-gap: 30px;
-    align-items: center;
+    align-items: center ;
 
-    position: relative;
+    overflow: unset;
 }
-
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.7);
+}
 #btnFechar{
     position: absolute;
     right: 25px;
