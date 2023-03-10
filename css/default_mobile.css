@@ -23,14 +23,14 @@
 
 /* HEADER */
 
-header{
+/* header{
     text-align: right;
     height: 80px;
     background-image: linear-gradient(to bottom, var(--rosa-padrao) 20%, white);
     position: sticky;
     top: 0px;
     z-index: -1;
-}
+} */
 
 .material-symbols-outlined {
     /* font-variation-settings:
@@ -56,6 +56,7 @@ main{
     width: 100vw;
     position: relative;
     z-index: -2;
+    background-image: linear-gradient(to bottom, var(--rosa-padrao) 1%, white 20%, white 90%);
 
     background-attachment: fixed;
 }
