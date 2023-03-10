@@ -51,8 +51,8 @@ main{
 /*  Main > Welcome */
 
 #welcome{
-    background: white url(../imagens/welcome-cortada.png) right bottom no-repeat fixed;
-    background-size: 38vh;
+    /* background: white url(../imagens/welcome-cortada.png) right bottom no-repeat fixed;
+    background-size: 38vh; */
     height: 100vh;
     width: 96vw;
     position: relative;
@@ -64,6 +64,13 @@ main{
     left: 50%;
     transform: translate(-50%, 0);
     width: 200px;
+}
+
+#imagem-welcome{
+    position: fixed;
+    right: 5px;
+    bottom: 0;
+    height: 70vh;
 }
 
 #welcome p {
