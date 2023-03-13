@@ -218,7 +218,8 @@ dialog img, dialog h4, dialog p{
     column-gap: 10px;
     font-size: 1rem;
     text-align: center;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 section#quem-somos img{
