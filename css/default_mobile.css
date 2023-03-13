@@ -231,8 +231,9 @@ section#quem-somos img{
 
 #nosso-estudio{
     background-color: white;
-    padding: 40px 20px 0 20px;
+    padding: 40px 20px 40px 20px;
     font-family: var(--fonte-padrao);
+    text-align: justify;
 }
 #nosso-estudio h2{
     text-align: center;
@@ -247,4 +248,47 @@ section#quem-somos img{
     padding-top: 5px;
     margin: 0 auto 20px auto;
     display: block;    
+}
+
+/* Contato */
+
+#contato{
+    background-color: var(--marrom-bordo);
+    color: var(--rosa-padrao);
+    text-align: center;
+    padding: 30px;
+}
+#contato p{
+    width: 80vw;
+    margin: auto;
+}
+#contato img{
+    height: 80px;
+    margin: 20px 10px 0 10px;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--rosa-padrao);
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: var(--marrom-bordo);
+
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    row-gap: 10px;
+}
+footer p{
+    width: 80vw;
+    margin: auto;
+}
+#author{
+    font-size: 0.7rem;
+}
+#author a{
+    text-decoration: none;
+    color: #4ec3e0;
+    font-weight: bold;
 }
