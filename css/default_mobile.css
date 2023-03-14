@@ -293,6 +293,6 @@ footer p{
 }
 #author a{
     text-decoration: none;
-    color: #4ec3e0;
+    color: var(--marrom-bordo);
     font-weight: bold;
 }
