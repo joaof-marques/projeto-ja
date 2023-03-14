@@ -11,7 +11,9 @@ const txtProce07 = ['imagens/estudio_generica.jpg','Procedimento 07', 'aaaa qwef
 const txtProce08 = ['imagens/estudio_generica.jpg','Procedimento 08', 'aaaa qwef qf qwe fqwef qwef qwefijhg qwefo8h qwp9uiq wep9o hqwp9eh fqpweo9iuf  q ph wepofh q9pqwefh q9we qw9ouihf pheqf  qh qweuh q we']
 
 function abrirModal(){
-    modal.showModal()
+    modal.classList.remove('fade')
+    modal.showModal()    
+    modal.classList.add('fade')
 }
 
 btnFechar.onclick = function(){
