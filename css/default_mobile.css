@@ -22,27 +22,65 @@
 }
 
 /* HEADER */
+/* NAV */
 
-/* header{
-    text-align: right;
-    height: 80px;
-    background-image: linear-gradient(to bottom, var(--rosa-padrao) 20%, white);
+nav{
+    background-color: var(--rosa-padrao);
+    border: 2px solid red;
+
     position: sticky;
     top: 0px;
-    z-index: -1;
-} */
+    width: 100vw;
+    padding: 20px;
 
-.material-symbols-outlined {
-    /* font-variation-settings:
-        'FILL' 0,
-        'wght' 100,
-        'GRAD' 0,
-        'opsz' 48; */
-        
-    margin: 25px 20px 0 0;
-    color: var(--marrom-bordo);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 5px;
+    
+    z-index: -1;
 }
 
+#menu-list{
+    position: absolute;
+    top: 45px;    
+
+}
+
+#menu-list ul{
+
+}
+
+#menu-list li{        
+    display: block;
+    background-color: var(--marrom-bordo);
+    padding: 20px;
+    
+}
+#menu-list li::after{
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1.3px;
+    background-color: var(--rosa-padrao);
+    transform: translateY(21.3px);
+}
+
+#menu-list li, #menu-list a{
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--rosa-padrao);
+}
+#ultimo-item-lista{
+    background-color: red;
+}
+
+nav>span{ 
+    background-color: var(--marrom-bordo);
+    height: 5px;
+    width: 23px;
+    border-radius: 2px;
+}
 /* MAIN */
 main{    
     font-family: var(--fonte-padrao);
@@ -51,12 +89,14 @@ main{
 
 /*  Main > Welcome */
 
-#welcome{
-    height: 99.99vh;
+#welcome{/* 
+    border: 2px solid red; */
+
+    height: 105vh;
     width: 100vw;
     position: relative;
-    z-index: -2;
-    background-image: linear-gradient(to bottom, var(--rosa-padrao) 1%, white 20%, white 90%);
+    z-index: -5;
+    background-image: linear-gradient(to bottom, var(--rosa-padrao) 20%, white);
 
     background-attachment: fixed;
 }
@@ -64,7 +104,7 @@ main{
 #logo-welcome{
     position: fixed;
     left: 50%;
-    bottom: 70%;
+    bottom: 70vh;
     transform: translate(-50%, 0);
     width: 200px;
 }
@@ -78,7 +118,7 @@ main{
 
 #welcome p {
     position: fixed;
-    bottom: 50%;
+    bottom: 50vh;
     left: 20px;
     width: 200px;
     text-align: center;
@@ -92,6 +132,7 @@ main{
     font-size: 3rem;
     color: var(--marrom-bordo);
     font-family: var(--fonte-manuscrito);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.267);
     background-image: linear-gradient(to bottom, var(--rosa-padrao) 92%, white 98%); 
     /* background-color: var(--rosa-padrao); */
     padding-bottom: 100px;
@@ -109,21 +150,31 @@ div#page02{
     justify-items: center;
     grid-row-gap: 40px;
 
-    margin-top: 15px;
+    margin: 40px 0;
 }
 
-.card{/* 
-    border: 2px solid #723c3c59; */
+section#nossos-tratamentos>div::selection{
+    background-color: aqua;
+}
+
+.card{
+    /* border: 1px solid #723c3c59;
+    border-right: none;
+    border-bottom: none; 
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.164); */
     display: inline-block;
     padding: 10px;
     width: 35vw;
     border-radius: 10px;
     cursor: pointer;
+
 }
+
 
 div.card img{
     width: 100px;
     border-radius: 50%;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.267);
 }
 div.card>h4{
     font-size: 2rem;
@@ -155,7 +206,6 @@ dialog{
     text-align: center;
     overflow: unset;
 
-    
     opacity: 0;
     transition: opacity 0.1s ease-in;
 }
@@ -212,11 +262,15 @@ dialog img, dialog h4, dialog p{
     font-weight: 300;
     margin-bottom: 40px;
     color: var(--marrom-bordo);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.320);
+    text-decoration: underline;
+    text-decoration-thickness: 1.2px;
 }
 
 #quem-somos>p{    
     text-align: justify;
 }
+
 #quem-somos-conteudo{    
     display: flex;
     flex-flow: row nowrap;
@@ -227,31 +281,34 @@ dialog img, dialog h4, dialog p{
     margin-bottom: 20px;
 }
 
-section#quem-somos img{
-    height: 200px;
-    border-radius: 15px;
-    padding-top: 5px;
+div#quem-somos-conteudo img{
+    width: 150px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
 }
 
-#nosso-estudio{
+/* Nosso Espaço */
+
+#nosso-espaço{
     background-color: white;
     padding: 40px 20px 40px 20px;
     font-family: var(--fonte-padrao);
     text-align: justify;
 }
-#nosso-estudio h2{
+#nosso-espaço h2{
     text-align: center;
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 40px;
     color: var(--marrom-bordo);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.320);
 }
-#nosso-estudio img{
+#nosso-espaço img{
     width: 90%;
     border-radius: 15px;
-    padding-top: 5px;
     margin: 0 auto 20px auto;
-    display: block;    
+    display: block;   
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300); 
 }
 
 /* Contato */
@@ -290,6 +347,7 @@ footer p{
 }
 #author{
     font-size: 0.7rem;
+    margin-bottom: 5px;
 }
 #author a{
     text-decoration: none;
