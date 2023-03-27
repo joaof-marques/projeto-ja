@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="./css/default_mobile.css"> <!-- media="screen and (min-width:601px) and (max-width: 768px)" -->
-    <link rel="stylesheet" href="./css/pequenas_telas_style.css" media="screen and (max-width:600px)">
+    <link rel="stylesheet" href="./css/default_mobile.css"> <!-- media="screen and (max-width:600px)" -->
+    <!-- <link rel="stylesheet" href="./css/pequenas_telas_style.css" media="screen and (min-width:601px) and (max-width: 768px)"> -->
     <link rel="stylesheet" href="./css/tablet_style.css" media="screen and (min-width:769px) and (max-width: 992px)">
     <link rel="stylesheet" href="./css/desktop_style.css" media="screen and (min-width:993px)">
 
@@ -17,11 +17,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <script src="js/modal.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
   <!-- <header>
       <span class="material-symbols-outlined">menu</span>
   </header> -->
+
+  <div id="backdrop-menu"></div>
+
   <nav>
 
     <div id="menu-list">
@@ -33,9 +37,11 @@
       </ul>
     </div>
 
-    <span></span>
-    <span></span>
-    <span></span>
+    <div id="btnToggleMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
   <main>
     <section id="welcome">
