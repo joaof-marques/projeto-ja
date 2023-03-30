@@ -30,24 +30,26 @@ html{
 /* HEADER */
 /* NAV */
 
-nav{
-
-    border: 2px solid blue;
-
-    
-    position: relative;
-    width: 100vw;
+nav{    
+    position: fixed;
+    right: 0;
+    top: 20px;
+    width: 20px;
     padding: 20px;
     height: 65px;
+    border-radius: 10px 0 0 10px;
 
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     row-gap: 5px;
     
     z-index: 1;
-
-    background-image: linear-gradient(to bottom, var(--rosa-padrao) 30%, #f7f7f7 90%);
+    
+    background-color: var(--rosa-padrao);
+    border: 2px solid var(--marrom-bordo);
+    border-right: none;
+    /* background-image: linear-gradient(to bottom, var(--rosa-padrao) 30%, #f7f7f7 90%); */
 }
 
 #menu-list{
@@ -55,7 +57,7 @@ nav{
     visibility: hidden;
     position: absolute;
     top: 60px;
-    right: 19px;
+    right: 0px;
     border: 2px solid var(--rosa-padrao);
     height: 0px;
     overflow-y: hidden;
@@ -97,11 +99,13 @@ nav{
     cursor: pointer;    
 }
 
+
 div#btnToggleMenu>span{
     background-color: var(--marrom-bordo);
     height: 5px;
     width: 23px;
-    border-radius: 2px;
+    border-radius: 3px;
+    transition: 0.4s ease-in-out;
 }
 
 #backdrop-menu.active{
@@ -110,6 +114,17 @@ div#btnToggleMenu>span{
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+}
+#btnToggleMenu.active{    
+}
+#btnToggleMenu.active :nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+}
+#btnToggleMenu.active :nth-child(2){
+    opacity: 0;
+}
+#btnToggleMenu.active :nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* MAIN */
