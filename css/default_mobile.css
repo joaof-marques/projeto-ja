@@ -31,7 +31,9 @@ html{
 /* NAV */
 
 nav{
-    background-color: var(--rosa-padrao);
+
+    border: 2px solid blue;
+
     
     position: relative;
     width: 100vw;
@@ -44,11 +46,13 @@ nav{
     row-gap: 5px;
     
     z-index: 1;
+
+    background-image: linear-gradient(to bottom, var(--rosa-padrao) 30%, #f7f7f7 90%);
 }
 
 #menu-list{
     display: block;
-
+    visibility: hidden;
     position: absolute;
     top: 60px;
     right: 19px;
@@ -117,29 +121,29 @@ main{
 /*  Main > Welcome */
 
 #welcome{
-    padding-top: 60px;
-    height: 105vh;
+    display: relative;
+    height: 100vh;
     width: 100vw;
     position: relative;
     z-index: -5;
-    background-image: linear-gradient(to bottom, var(--rosa-padrao) 20%, white);
-
-    background-attachment: fixed;
+    background: white url(../imagens/background-welcome_default_mobile.png) center center no-repeat fixed;
+    background-size: cover;
 }
 
 #logo-welcome{
     position: fixed;
     left: 50%;
-    bottom: 70vh;
+    bottom: 65vh;
     transform: translate(-50%, 0);
-    width: 200px;
+    width: 170px;
 }
 
 #imagem-welcome{
     position: fixed;
-    right: 5px;
+    right: 50%;
     bottom: 0;
-    height: 60vh;
+    transform: translate(50%, 0);
+    width: 55vw;
 }
 
 #welcome p {

@@ -16,6 +16,7 @@
 
 nav{
     align-items: center;
+    border-bottom: 3px solid #ca9841;
 }
 
 #menu-list{
@@ -24,12 +25,15 @@ nav{
     text-align: center;
     top: unset;
     right: unset;
+    height: auto;
+    border: none;
 }
 #menu-list li{
     display: inline;
     padding: 0;
     margin: 0 15px;
-    background-color: var(--rosa-padrao);
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
     color: var(--marrom-bordo);
     font-weight: 500;
 }
@@ -44,6 +48,21 @@ nav{
 }
 #menu-list.active{
     transform: translate(0,0);
+    height: 240px;
+}
+
+/* WELCOME */
+
+#welcome{    
+    background: white url(../imagens/background-welcome.png) center right no-repeat fixed;
+    background-size: cover;
+}
+
+#imagem-welcome{
+    position: fixed;
+    right: 25vw;
+    bottom: 0;
+    width: 35vw;
 }
 
 /* NOSSOS TRATAMENTOS */
