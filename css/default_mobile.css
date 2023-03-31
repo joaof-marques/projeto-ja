@@ -102,7 +102,7 @@ nav{
 
 
 div#btnToggleMenu>span{
-    background-color: var(--marrom-bordo);
+    background-color: white;
     height: 5px;
     width: 23px;
     border-radius: 3px;
@@ -238,8 +238,8 @@ section#nossos-tratamentos>div::selection{
     height: 180px;
     border-radius: 10px;
     cursor: pointer;
-
-    border: 2px solid red;
+/* 
+    border: 2px solid red; */
 }
 
 
@@ -287,7 +287,9 @@ dialog p{
     text-align: justify;
     font-size: 1rem;
 }
-
+dialog strong{
+    color: var(--marrom-bordo);
+}
 dialog.fade{
     opacity: 1;
 }
