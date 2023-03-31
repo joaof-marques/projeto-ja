@@ -268,8 +268,8 @@ div.card>h4{
 }
 dialog{
     margin: auto;
-    font-family: var(--fonte-padrao);
-    height: 85vh;
+    font-family: var(--fonte-padrao);/* 
+    height: 85vh; */
     width: 80vw;
     font-size: 1.2rem;
     padding: 20px;
@@ -286,6 +286,11 @@ dialog{
 dialog p{
     text-align: justify;
     font-size: 1rem;
+}
+@media screen and (max-height: 600px){
+    dialog p{
+        font-size: 3.5vw;
+    }
 }
 dialog strong{
     color: var(--marrom-bordo);
