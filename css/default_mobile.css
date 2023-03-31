@@ -349,12 +349,11 @@ dialog img, dialog h4, dialog p{
     margin-bottom: 40px;
     color: var(--marrom-bordo);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.320);
-    text-decoration: underline;
-    text-decoration-thickness: 1.2px;
 }
 
 #quem-somos>p{    
     text-align: justify;
+    margin-top: 10px;
 }
 
 #quem-somos-conteudo{    
