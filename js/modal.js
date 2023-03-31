@@ -1,7 +1,7 @@
 const modal = document.querySelector("dialog")
 const btnFechar = document.querySelector("#btnFechar")
 
-const txtProce01 = ['imagens/estudio_generica.jpg','Procedimento 01', 'aaaa qwef qf qwe fqwef qwef qwefijhg qwefo8h qwp9uiq wep9o hqwp9eh fqpweo9iuf  q ph wepofh q9pqwefh q9we qw9ouihf pheqf  qh qweuh q we']
+const txtProce01 = ['imagens/estudio_generica.jpg','BB Glow', 'Para uma pele radiante e uniforme, BB Glow!<br>Este tratamento incrível utiliza um sérum especializado que é injetado na camada superior da pele, fornecendo uma base de maquiagem duradoura e uniforme. É seguro e não invasivo, e não requer tempo de recuperação. É perfeito para pessoas ocupadas que querem melhorar a aparência da pele sem sacrificar o tempo ou o conforto.']
 const txtProce02 = ['imagens/estudio_generica.jpg','Procedimento 02', 'aaaa qwef qf qwe fqwef qwef qwefijhg qwefo8h qwp9uiq wep9o hqwp9eh fqpweo9iuf  q ph wepofh q9pqwefh q9we qw9ouihf pheqf  qh qweuh q we']
 const txtProce03 = ['imagens/estudio_generica.jpg','Procedimento 03', 'aaaa qwef qf qwe fqwef qwef qwefijhg qwefo8h qwp9uiq wep9o hqwp9eh fqpweo9iuf  q ph wepofh q9pqwefh q9we qw9ouihf pheqf  qh qweuh q we']
 const txtProce04 = ['imagens/estudio_generica.jpg','Procedimento 04', 'aaaa qwef qf qwe fqwef qwef qwefijhg qwefo8h qwp9uiq wep9o hqwp9eh fqpweo9iuf  q ph wepofh q9pqwefh q9we qw9ouihf pheqf  qh qweuh q we']
