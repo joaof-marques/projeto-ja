@@ -10,7 +10,7 @@
     --fonte-padrao: 'Montserrat', sans-serif;
 
     /* Cores */
-    --rosa-padrao: #F0C8C0;
+    --rosa-padrao: #feccc1;
     --marrom-bordo: #723C3C;
 }
 
@@ -27,7 +27,7 @@ nav{
     color: black;
 
     display: flex;
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -43,7 +43,7 @@ nav{
 }
 #menu-list li{
     display: inline;
-    padding: 0;
+    padding: 10px;
     margin: 0 15px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration: underline;
@@ -86,6 +86,10 @@ nav{
 
 /* NOSSOS TRATAMENTOS */
 
+section{
+    position: relative;
+}
+
 div#page01, 
 div#page02{
     display: grid;
@@ -98,19 +102,30 @@ div#page02{
     margin: 40px 0;
 }
 
-section#nossos-tratamentos>div::selection{
-    background-color: aqua;
-}
-
 .card{
-    /* border: 1px solid #723c3c59;
-    border-right: none;
-    border-bottom: none; 
-    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.164); */
-    display: inline-block;
+        display: inline-block;
     padding: 10px;
     width: 35vw;
     border-radius: 10px;
     cursor: pointer;
 
+}
+
+/* QUEM SOMOS */
+#quem-somos{
+    padding: 80px;
+}
+div#quem-somos-conteudo img{
+    width: 35vw;
+}
+#quem-somos-conteudo{
+    padding: 20px;
+}
+/* NOSSO ESPAÇO */
+
+#nosso-espaço{
+    padding: 80px;
+}
+#nosso-espaço img{
+    margin-bottom: 60px;
 }
