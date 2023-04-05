@@ -89,7 +89,8 @@ nav{
 section{
     position: relative;
 }
-
+#nossos-tratamentos{
+}
 div#page01, 
 div#page02{
     display: grid;
@@ -103,7 +104,7 @@ div#page02{
 }
 
 .card{
-        display: inline-block;
+    display: inline-block;
     padding: 10px;
     width: 35vw;
     border-radius: 10px;
@@ -124,8 +125,17 @@ div#quem-somos-conteudo img{
 /* NOSSO ESPAÇO */
 
 #nosso-espaço{
-    padding: 80px;
+    text-align: center;
 }
 #nosso-espaço img{
     margin-bottom: 60px;
+}
+#slider{
+    margin: auto;
+}
+#slider li{
+    height: 380px;
+}
+#nosso-espaço p{
+    width: 90vw;
 }

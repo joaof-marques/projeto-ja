@@ -209,6 +209,7 @@ main{
 }
 #nossos-tratamentos h2{
     margin-bottom: 32px;
+    font-weight: 400;
 }
 #nossos-tratamentos>p{
     font-size: 1.5rem;
@@ -302,12 +303,26 @@ dialog::backdrop{
     background-color: rgba(0, 0, 0, 0.7);
 }
 #btnFechar{
+    padding: 5px;
     position: absolute;
     right: 25px;
     color: var(--marrom-bordo);
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
-
+div#btnFechar>span{
+    height:5px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: var(--marrom-bordo);
+}
+#btnFechar span:nth-child(1){
+    transform: translateY(2.5px) rotate(45deg);
+}
+#btnFechar span:nth-child(2){
+    transform: translateY(-2.5px) rotate(-45deg);
+}
 dialog img{
     width: 170px;
     border-radius: 50%;
@@ -358,15 +373,17 @@ dialog img, dialog h4, dialog p{
 #quem-somos-conteudo{    
     display: flex;
     flex-flow: row nowrap;
-    column-gap: 80px;
+    column-gap: 30px;
     font-size: 1rem;
     text-align: center;
     align-items: center;
     margin-bottom: 20px;
 }
-
+#quem-somos-conteudo p{    
+    width: 45vw;
+}
 div#quem-somos-conteudo img{
-    width: 150px;
+    width: 45vw;
     border-radius: 25px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
     
@@ -396,11 +413,12 @@ div#quem-somos-conteudo img{
     display: block;
     background-color: #ffffff;
     width:90vw;
-    height: 280px;
+    height: 250px;
 }
 #slider li{
     list-style: none;
     position: absolute;
+    height: 200px;
 }
 #slider img{
     width: 90vw;
@@ -450,6 +468,10 @@ div#quem-somos-conteudo img{
 }
 #slider li:nth-child(4) label{
     left: calc(50% + 45px);
+}
+
+#slider li input:checked ~ label{
+    background-color: rgb(192, 192, 192);
 }
 
 #slider li input:checked ~ img{
