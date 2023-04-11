@@ -148,8 +148,6 @@ main{
     width: 100vw;
     position: relative;
     z-index: -5;
-    /* background: white url(../imagens/background-welcome_default_mobile.png) center center no-repeat fixed;
-    background-size: cover; */
 }
 
 #logo-welcome{

@@ -14,6 +14,10 @@
     --marrom-bordo: #723C3C;
 }
 
+html{    
+    scroll-padding-top: 70px;
+}
+
 /* MENU NAV */
 
 nav{
@@ -119,4 +123,49 @@ nav{
 
 #nossos-tratamentos{    
     z-index: 2;
+}
+
+#nossos-tratamentos h2{
+    font-size: 4rem;
+}
+#nossos-tratamentos p{
+    font-size: 2.5rem;
+}
+
+#botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 0px;
+    grid-template-areas: unset;
+}
+#page01, #page02{
+    width: 50vw;
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "card1 card2" "card3 card4";
+    justify-items: center;
+    grid-row-gap: 40px;
+
+    margin: 40px 0; */
+}
+.card{
+    width: unset;
+    transition: 0.1s linear;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+dialog{
+    width: 50vw;
+    padding: 40px;
+}
+
+/* QUEM SOU */
+
+#quem-somos{
+    padding-top: 30px;
 }
