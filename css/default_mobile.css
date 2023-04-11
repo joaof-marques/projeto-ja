@@ -166,6 +166,7 @@ main{
     bottom: 0;
     transform: translate(50%, 0);
     width: 55vw;
+    max-width: 400px;
 }
 @media screen and (max-height: 736px){
     #imagem-welcome{

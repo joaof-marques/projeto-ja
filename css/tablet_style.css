@@ -132,10 +132,14 @@ div#quem-somos-conteudo img{
 }
 #slider{
     margin: auto;
+    height: 450px;
 }
 #slider li{
     height: 380px;
 }
 #nosso-espaço p{
     width: 90vw;
+    display: block;
+    margin: auto;
+    text-align: justify;
 }
