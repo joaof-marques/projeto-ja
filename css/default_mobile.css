@@ -61,6 +61,7 @@ nav{
     right: 0px;
     border: 2px solid var(--rosa-padrao);
     height: 0px;
+    width: 0px;
     overflow-y: hidden;
     font-family: var(--fonte-padrao);
     transition-duration: 0.4s;
@@ -68,8 +69,12 @@ nav{
 }
 
 #menu-list.active{
-    height: 300px;
+    height: unset;
+    width: unset;
     opacity: 1;
+    z-index: 5;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
 }
 
 #menu-list li{        
@@ -237,8 +242,6 @@ section#nossos-tratamentos>div::selection{
     height: 180px;
     border-radius: 10px;
     cursor: pointer;
-/* 
-    border: 2px solid red; */
 }
 
 
@@ -267,8 +270,7 @@ div.card>h4{
 }
 dialog{
     margin: auto;
-    font-family: var(--fonte-padrao);/* 
-    height: 85vh; */
+    font-family: var(--fonte-padrao);
     width: 80vw;
     font-size: 1.2rem;
     padding: 20px;
@@ -359,9 +361,9 @@ dialog img, dialog h4, dialog p{
     text-align: center;
     font-size: 2rem;
     font-weight: 300;
-    margin-bottom: 40px;
     color: var(--marrom-bordo);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.320);
+    margin-bottom: 40px;
 }
 
 #quem-somos-conteudo{
@@ -381,6 +383,9 @@ dialog img, dialog h4, dialog p{
     border-radius: 25px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
     grid-area: img;
+}
+#quem-somos strong{
+    color: var(--marrom-bordo);
 }
 #txt1{
     text-align: center;
@@ -403,8 +408,8 @@ dialog img, dialog h4, dialog p{
     font-family: var(--fonte-padrao);
     text-align: justify;
     z-index: 2;
-
-    height: 1000px;
+/* 
+    height: 100vh; */
 }
 #nosso-espaço h2{
     text-align: center;
@@ -414,12 +419,15 @@ dialog img, dialog h4, dialog p{
     color: var(--marrom-bordo);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.320);
 }
+#nosso-espaço strong{
+    color: var(--marrom-bordo);
+}
 
 #slider{
     display: block;
     background-color: #ffffff;
     width:90vw;
-
+    margin-bottom: 70px;
 
     aspect-ratio: 1.77/1;
     position: relative;
@@ -460,7 +468,7 @@ dialog img, dialog h4, dialog p{
     left: 0px;
     bottom: 15px;
 
-    z-index: 4;
+    z-index: 3;
 }
 #slider li:nth-child(1) label {
     left: calc(50% - 45px);

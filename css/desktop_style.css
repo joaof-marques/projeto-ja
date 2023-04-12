@@ -139,15 +139,16 @@ nav{
     grid-row-gap: 0px;
     grid-template-areas: unset;
 }
-#page01, #page02{
+div#page01, div#page02{
     width: 50vw;
+    grid-row-gap: 0px;
 
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "card1 card2" "card3 card4";
     justify-items: center;
-    grid-row-gap: 40px;
+    
 
     margin: 40px 0; */
 }
@@ -170,9 +171,7 @@ dialog{
     padding-top: 30px;
     height: 95vh;
 }
-#quem-somos strong{
-    color: var(--marrom-bordo);
-}
+
 #quem-somos-conteudo{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -180,7 +179,7 @@ dialog{
     align-items: center;
     justify-items: center;
     column-gap: 10px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #quem-somos img{
     width: 20vw;
@@ -203,6 +202,11 @@ dialog{
 #slider img{
     width: 50vw;
 }
-#nosso-espaço strong{
-    color: var(--marrom-bordo);
+@media screen and (max-height: 700px){
+    #slider{
+        width: 40vw;
+    }
+    #slider img{
+        width: 40vw;
+    }
 }
