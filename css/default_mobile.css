@@ -419,12 +419,14 @@ dialog img, dialog h4, dialog p{
     display: block;
     background-color: #ffffff;
     width:90vw;
-    height: 250px;
+
+
+    aspect-ratio: 1.77/1;
+    position: relative;
 }
 #slider li{
     list-style: none;
     position: absolute;
-    height: 200px;
 }
 #slider img{
     width: 90vw;
@@ -446,8 +448,7 @@ dialog img, dialog h4, dialog p{
 }
 #slider label{
     border: 2px solid var(--rosa-padrao);
-    background-color: #f7f7f7;/* 
-    bottom: 0px; */
+    background-color: #f7f7f7;
     cursor: pointer;
 
     height: 15px;
@@ -457,7 +458,7 @@ dialog img, dialog h4, dialog p{
     display: block;
     position: absolute;
     left: 0px;
-    bottom: 8px;
+    bottom: 15px;
 
     z-index: 4;
 }

@@ -34,7 +34,7 @@ nav{
     color: black;
 
     display: flex;
-    z-index: 1;
+    z-index: 5;
 }
 
 
@@ -168,4 +168,41 @@ dialog{
 
 #quem-somos{
     padding-top: 30px;
+    height: 95vh;
+}
+#quem-somos strong{
+    color: var(--marrom-bordo);
+}
+#quem-somos-conteudo{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img txt1" "img txt2" "img txt3";
+    align-items: center;
+    justify-items: center;
+    column-gap: 10px;
+    margin-top: 100px;
+}
+#quem-somos img{
+    width: 20vw;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
+}
+#quem-somos p{
+    width: 35vw;
+}
+
+/* NOSSO ESPAÇO */
+#nosso-espaço{
+    text-align: center;
+    height: 95vh;
+}
+#slider{
+    margin: 0 auto 70px auto;
+    width: 50vw;
+}
+#slider img{
+    width: 50vw;
+}
+#nosso-espaço strong{
+    color: var(--marrom-bordo);
 }
