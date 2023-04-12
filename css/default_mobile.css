@@ -364,28 +364,35 @@ dialog img, dialog h4, dialog p{
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.320);
 }
 
-#quem-somos>p{    
-    text-align: justify;
-    margin-top: 10px;
+#quem-somos-conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "img txt1" "txt2 txt2" "txt3 txt3";
+    align-items: center;
+    column-gap: 10px;
 }
 
-#quem-somos-conteudo{    
-    display: flex;
-    flex-flow: row nowrap;
-    column-gap: 30px;
-    font-size: 1rem;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 20px;
+#quem-somos p{
+    margin-top: 10px; 
 }
-#quem-somos-conteudo p{    
-    width: 45vw;
-}
-div#quem-somos-conteudo img{
+#quem-somos img{
     width: 45vw;
     border-radius: 25px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
-    
+    grid-area: img;
+}
+#txt1{
+    text-align: center;
+    grid-area: txt1;
+}
+#txt2{   
+    text-align: justify;
+    grid-area: txt2;
+}
+#txt3{   
+    text-align: justify;
+    grid-area: txt3;
 }
 
 /* Nosso Espaço */
