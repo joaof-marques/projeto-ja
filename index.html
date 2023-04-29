@@ -50,13 +50,18 @@
       <img src="imagens/logos/logo-rosa_refeito.png" alt="Logo Janaína Amaral Estética Avançada" id="logo-welcome">
       <p id="p1">Torne a sua vida mais prática, leve e bela.</p>
       <p id="p2">Viva o tratamento de zelo e atenção que você merece. <br> <br> A excelência é a nossa prioridade!</p>
-      <img src="imagens/welcome-cortada4.png" alt="" id="imagem-welcome">
+      <img src="imagens/img-welcome.png" alt="" id="imagem-welcome">
     </section>
     <section id="nossos-tratamentos">
       <h2>Nossos tratamentos</h2>
       <p>Clique e descubra!</p>
 
-      <div id="botoes">
+      <div id="slider-procedimentos">
+
+        <input type="checkbox" name="togglerSlider" id="toggler">
+        <label for="toggler" id="toggler1"><</label>
+        <label for="toggler" id="toggler2">></label>
+
         <div id="page01"> <!-- Dividido em página para carrossel -->
           <div class="card card1" onclick="alteraTexto(1)">
             <img src="imagens/procedimento.jpg" alt="">
@@ -73,6 +78,14 @@
           <div class="card card4" onclick="alteraTexto(4)">
             <img src="imagens/procedimento.jpg" alt="">
             <h4>Plasma Lifting</h4>
+          </div>
+          <div class="card card5" onclick="alteraTexto(4)">
+            <img src="imagens/procedimento.jpg" alt="">
+            <h4>Depilação a laser</h4>
+          </div>
+          <div class="card card6" onclick="alteraTexto(4)">
+            <img src="imagens/procedimento.jpg" alt="">
+            <h4>Botox (Toxina Botulínica)</h4>
           </div>
         </div>
         <div id="page02">
@@ -92,11 +105,26 @@
             <img src="imagens/procedimento.jpg" alt="">
             <h4>Limpeza de Pele</h4>
           </div>
+          <div class="card card5" onclick="alteraTexto(8)">
+            <img src="imagens/procedimento.jpg" alt="">
+            <h4>Hidra Gloss</h4>
+          </div>
+          <div class="card card6" onclick="alteraTexto(8)">
+            <img src="imagens/procedimento.jpg" alt="">
+            <h4>Bioestimuladores de Colágeno</h4>
+          </div>
         </div>
       </div>
            
+      <button id="maisProcedimentos" onclick="maisProcedimentos()">e muito mais...</button>
+      <dialog id="modalMaisProcedimentos">
+        <ul>
+
+        </ul>
+      </dialog>
     </section>
-    <dialog>
+     
+    <dialog id="modalDetalhe">
       <div id="btnFechar">
         <span></span>
         <span></span>
@@ -157,7 +185,7 @@
   </main>
   <footer>
     <p>Janaína Amaral Estética Avançada <br> (61) 9 9577-0959</p>
-    <p>SGAS 910, Edifício Mix Park Sul, Bloco D, Sala 000 - Asa Sul, Brasília - DF, 70390-100</p>
+    <p>SGAS 910, Edifício Mix Park Sul, Bloco D, Sala 143 - Asa Sul, Brasília - DF, 70390-100</p>
     <p id="author">Desenvolvido por <a href="https://instagram.com/jumper_mkt?igshid=YmMyMTA2M2Y=">Jumper MKT Digital</a></p>
   </footer>
 

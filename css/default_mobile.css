@@ -206,7 +206,6 @@ main{
     font-family: var(--fonte-manuscrito);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.267);
     background-image: linear-gradient(to bottom, var(--rosa-padrao) 92%, white 98%); 
-    /* background-color: var(--rosa-padrao); */
     padding-bottom: 100px;
     z-index: 2;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.280);
@@ -222,20 +221,46 @@ main{
 
 div#page01, 
 div#page02{
+    min-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "card1 card2" "card3 card4";
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6";
     justify-items: center;
     grid-row-gap: 40px;
 
     margin: 40px 0;
+
+    transition: transform 0.4s ease-in-out; 
 }
 
-section#nossos-tratamentos>div::selection{
-    background-color: aqua;
+#slider-procedimentos{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+}
+#toggler{
+    display: none;
 }
 
+#toggler1, #toggler2{
+    position: absolute;
+    font-size: 8rem;
+    z-index: 5;
+}
+
+#toggler1{
+    top: calc(45% - 3rem);
+    left: 10px;
+}
+#toggler2{
+    top: calc(45% - 3rem);
+    right: 10px;
+}
+#toggler:checked ~ #page01, #toggler:checked ~ #page02{
+    transform: translateX(-100%);
+}
 .card{
     padding: 10px;
     width: 35vw;
@@ -268,6 +293,14 @@ div.card>h4{
 .card4{
     grid-area: card4;
 }
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+
+
 dialog{
     margin: auto;
     font-family: var(--fonte-padrao);
@@ -282,8 +315,11 @@ dialog{
     overflow: unset;
 
     opacity: 0;
-    transition: opacity 0.1s ease-in;
+    transition: opacity 0.3s ease-in;
 }
+
+
+
 dialog p{
     text-align: justify;
     font-size: 1rem;
@@ -346,6 +382,41 @@ dialog img, dialog h4, dialog p{
     color: white;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.281);
     cursor: pointer;
+}
+
+#maisProcedimentos{
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.137);
+    animation: pulsante 2s infinite;
+    font-family: var(--fonte-manuscrito);
+    background-color: transparent;
+    color: var(--marrom-bordo);
+}
+
+@keyframes pulsante {
+    0%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(3deg);
+    }
+    85%{
+        transform: rotate(-3deg);
+    }
+    90%{
+        transform: rotate(3deg);
+    }
+    95%{
+        transform: rotate(-3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
 /* QUEM SOMOS */
@@ -481,12 +552,13 @@ dialog img, dialog h4, dialog p{
 #slider li:nth-child(3) label {
     left: calc(50% + 15px);
 }
+
 #slider li:nth-child(4) label{
     left: calc(50% + 45px);
 }
 
 #slider li input:checked ~ label{
-    background-color: rgb(192, 192, 192);
+    background-color:  var(--rosa-padrao);
 }
 
 #slider li input:checked ~ img{

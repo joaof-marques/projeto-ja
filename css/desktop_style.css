@@ -79,7 +79,7 @@ nav{
 #imagem-welcome{
     width: auto;
     height: 70vh;
-    right: 20vw;
+    right: 25vw;
 }
 #logo-welcome{
     bottom: 50vh;
@@ -123,10 +123,12 @@ nav{
 
 #nossos-tratamentos{    
     z-index: 2;
+    padding-top: 10px;
 }
 
 #nossos-tratamentos h2{
     font-size: 4rem;
+    margin-bottom: 0px;
 }
 #nossos-tratamentos p{
     font-size: 2.5rem;
@@ -142,6 +144,7 @@ nav{
 div#page01, div#page02{
     width: 50vw;
     grid-row-gap: 0px;
+    margin: 0;
 
     /* display: grid;
     grid-template-columns: 1fr 1fr;

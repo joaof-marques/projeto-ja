@@ -1,4 +1,4 @@
-const modal = document.querySelector("dialog")
+const modal = document.querySelector("#modalDetalhe")
 const btnFechar = document.querySelector("#btnFechar")
 
 const txtProce01 = ['imagens/estudio_generica.jpg','BB Glow', 'Para uma pele radiante e uniforme, <strong>BB Glow</strong>!<br>Este tratamento incrível utiliza um sérum especializado que é injetado na camada superior da pele, fornecendo uma base de maquiagem duradoura e uniforme. É seguro e não invasivo, e não requer tempo de recuperação. É perfeito para pessoas ocupadas que querem melhorar a aparência da pele sem sacrificar o tempo ou o conforto.']
@@ -11,12 +11,12 @@ const txtProce07 = ['imagens/estudio_generica.jpg','Criolipólise', 'Esse tratam
 const txtProce08 = ['imagens/estudio_generica.jpg','Limpeza de Pele', 'A Limpeza de Pele é uma parte importante da sua rotina de cuidados com a pele. Se você quer ter uma aparência mais fresca, saudável e radiante, a <strong>Limpeza de Pele</strong> pode ser o tratamento ideal para você! <br>Com a nossa <strong>Limpeza de Pele</strong> profissional, você pode remover as impurezas, células mortas e excesso de óleo que obstruem os seus poros, resultando em uma aparência mais suave e uniforme. Além disso, a <strong>Limpeza de Pele</strong> também ajuda a prevenir acne, rugas e outros sinais de envelhecimento.']
 
 function abrirModal(){
-    modal.classList.remove('fade')
     modal.showModal()    
     modal.classList.add('fade')
 }
 
 btnFechar.onclick = function(){
+        modal.classList.remove('fade')
     modal.close()
 }
 
