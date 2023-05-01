@@ -38,6 +38,7 @@ nav{
     top: unset;
     right: unset;
     height: auto;
+    width: auto;
     border: none;
     opacity: 1;
 }
@@ -113,17 +114,31 @@ div.card img{
 /* QUEM SOMOS */
 #quem-somos{
     padding: 80px;
+    padding-bottom: 0px;
 }
 div#quem-somos-conteudo img{
     width: 35vw;
 }
 #quem-somos-conteudo{
     padding: 20px;
+    grid-template-rows: 0.3fr 0.5fr 0.5fr 1fr;
+    grid-template-areas: "img txt1" "img txt2" "img txt3" "espec espec";
+}
+#quem-somos p{
+    margin-top: 0px;
+}
+#especializacoes{
+    display: flex;
+}
+#especializacoes ul{
+    padding-right: 20px;
+    margin-right: 5px;
 }
 /* NOSSO ESPAÇO */
 
 #nosso-espaço{
     text-align: center;
+    padding-top: 0px;
 }
 #nosso-espaço img{
     margin-bottom: 60px;

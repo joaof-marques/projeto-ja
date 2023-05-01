@@ -46,7 +46,7 @@ nav{
     align-items: center;
     row-gap: 5px;
     
-    z-index: 1;
+    z-index: 100;
     
     background-color: var(--rosa-padrao);
     border: 2px solid var(--marrom-bordo);
@@ -243,6 +243,9 @@ div#page02{
     width: 100vw;
     display: flex;
     overflow: auto;
+}
+#slider-procedimentos::-webkit-scrollbar{
+    height: 0;
 }
 #toggler{
     display: none;
@@ -509,7 +512,7 @@ dialog#idModalProc.fade{
 
 #quem-somos{
     background-color: white;
-    padding: 0 20px;
+    padding: 40px 20px 0 20px;
     font-family: var(--fonte-padrao);
     z-index: 2;
 }
@@ -526,8 +529,8 @@ dialog#idModalProc.fade{
 #quem-somos-conteudo{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas: "img txt1" "txt2 txt2" "txt3 txt3";
+    grid-template-rows: 0.5fr 0.3fr 0.3fr 1fr;
+    grid-template-areas: "img txt1" "txt2 txt2" "txt3 txt3" "espec espec";
     align-items: center;
     column-gap: 10px;
 }
@@ -555,6 +558,26 @@ dialog#idModalProc.fade{
 #txt3{   
     text-align: justify;
     grid-area: txt3;
+}
+
+#especializacoes{
+    grid-area: espec;
+    display: block;
+    margin: auto;
+}
+#especializacoes ul{
+    padding-bottom: 20px;
+}
+#especializacoes li{
+    list-style-position: inside;
+}
+#especializacoes li:nth-child(1){
+    text-decoration: none;
+    list-style-type: none;
+    margin: 20px 0px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--marrom-bordo);
 }
 
 /* Nosso Espaço */
@@ -664,8 +687,19 @@ dialog#idModalProc.fade{
     margin: auto;
 }
 #contato img{
-    height: 80px;
     margin: 20px 10px 0 10px;
+}
+#logo_instagram{
+    height: 90px;
+}
+#logo_whatsapp{
+    height: 90px;
+}
+#qrcode_whatsapp{
+    display: none;
+}
+#qrcode_instagram{
+    display: none;
 }
 
 /* footer */

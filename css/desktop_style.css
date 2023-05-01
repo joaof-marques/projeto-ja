@@ -44,8 +44,8 @@ nav{
     text-align: center;
     top: unset;
     right: unset;
-    height: auto;
-    width: unset;
+    height: auto;   
+    width: auto;
     border: none;
     opacity: 1;
 }
@@ -183,9 +183,9 @@ dialog{
 }
 
 #quem-somos-conteudo{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "img txt1" "img txt2" "img txt3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img txt1 espec" "img txt2 espec" "img txt3 espec";
     align-items: center;
     justify-items: center;
     column-gap: 10px;
@@ -219,4 +219,20 @@ dialog{
     #slider img{
         width: 40vw;
     }
+}
+
+/* CONTATO */
+#logo_instagram{
+    display: none;
+}
+#logo_whatsapp{
+    display: none;
+}
+#qrcode_whatsapp{
+    display: inherit;
+    height: 180px;
+}
+#qrcode_instagram{
+    display: inherit;
+    height: 180px;
 }
