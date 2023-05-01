@@ -11,7 +11,7 @@
 
     /* Cores */
     --rosa-padrao: #feccc1;
-    --marrom-bordo: #723C3C;
+    --marrom-bordo: #754a4a;
 }
 
 html{    
@@ -133,7 +133,10 @@ nav{
 #nossos-tratamentos p{
     font-size: 2.5rem;
 }
-
+#slider-procedimentos{
+    display: flex;
+    width: auto;
+}
 #botoes{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,20 +146,24 @@ nav{
 }
 div#page01, div#page02{
     width: 50vw;
-    grid-row-gap: 0px;
+    grid-row-gap: 30px;
     margin: 0;
+    min-width: auto;
+    padding: 0px;
 
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "card1 card2" "card3 card4";
+    grid-template-areas: "card1 card2 card3" "card4 card5 card6";
     justify-items: center;
     
 
-    margin: 40px 0; */
+    margin: 40px 0; 
+}
+#toggler1, #toggler2{
+    display: none;
 }
 .card{
-    width: unset;
+    width: 12.5vw;
     transition: 0.1s linear;
 }
 .card:hover{

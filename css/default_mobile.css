@@ -15,6 +15,7 @@
     --marrom-bordo: #723C3C;
 }
 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -170,6 +171,7 @@ main{
     transform: translate(50%, 0);
     width: 55vw;
     max-width: 400px;
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.295));
 }
 @media screen and (max-height: 736px){
     #imagem-welcome{
@@ -205,10 +207,11 @@ main{
     color: var(--marrom-bordo);
     font-family: var(--fonte-manuscrito);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.267);
-    background-image: linear-gradient(to bottom, var(--rosa-padrao) 92%, white 98%); 
+    background-image: linear-gradient(to bottom, #FFE4DE 92%, white 98%); 
     padding-bottom: 100px;
     z-index: 2;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.280);
+    box-shadow: 0 -6px 7px rgba(0, 0, 0, 0.120);
+    position: relative;
 }
 #nossos-tratamentos h2{
     margin-bottom: 32px;
@@ -216,10 +219,10 @@ main{
 }
 #nossos-tratamentos>p{
     font-size: 1.5rem;
-    color: black;
+    color: #99675C;
 }
 
-div#page01, 
+div#page01,
 div#page02{
     min-width: 100%;
     display: grid;
@@ -230,6 +233,7 @@ div#page02{
     grid-row-gap: 40px;
 
     margin: 40px 0;
+    padding: 15px;
 
     transition: transform 0.4s ease-in-out; 
 }
@@ -238,7 +242,7 @@ div#page02{
     position: relative;
     width: 100vw;
     display: flex;
-    overflow-x: hidden;
+    overflow: auto;
 }
 #toggler{
     display: none;
@@ -258,27 +262,39 @@ div#page02{
     top: calc(45% - 3rem);
     right: 10px;
 }
-#toggler:checked ~ #page01, #toggler:checked ~ #page02{
-    transform: translateX(-100%);
+#toggler:checked ~ #slider-procedimentos #page01{
+    transform: translate(-100%);
+} 
+#toggler:checked ~ #slider-procedimentos #page02{
+    transform: translate(-100%);
 }
 .card{
     padding: 10px;
-    width: 35vw;
+    width: 32vw;
     height: 180px;
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
+    text-align: center;
+
+    background-color: var(--rosa-padrao);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.308);
+    position: relative;
 }
 
 
 div.card img{
     width: 100px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.267);
+    border-radius: 12px;/* 
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.308); */
 }
 div.card>h4{
     text-transform: uppercase;
     font-size: 0.8rem;
     font-family: var(--fonte-padrao);
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .card1{
@@ -301,7 +317,7 @@ div.card>h4{
 }
 
 
-dialog{
+dialog#modalDetalhe{
     margin: auto;
     font-family: var(--fonte-padrao);
     width: 80vw;
@@ -320,23 +336,23 @@ dialog{
 
 
 
-dialog p{
+dialog#modalDetalhe p{
     text-align: justify;
     font-size: 1rem;
 }
 @media screen and (max-height: 600px){
-    dialog p{
+    dialog#modalDetalhe p{
         font-size: 3.5vw;
     }
 }
-dialog strong{
+dialog#modalDetalhe strong{
     color: var(--marrom-bordo);
 }
-dialog.fade{
+dialog#modalDetalhe.fade{
     opacity: 1;
 }
 
-dialog::backdrop{
+dialog#modalDetalhe::backdrop{
     background-color: rgba(0, 0, 0, 0.7);
 }
 #btnFechar{
@@ -361,14 +377,19 @@ div#btnFechar>span{
     transform: translateY(-2.5px) rotate(-45deg);
 }
 dialog img{
-    width: 170px;
-    border-radius: 50%;
+    width: 230px;
+    border-radius: 10px;
 }
 
-dialog img, dialog h4, dialog p{
+dialog img, dialog h3, dialog p{
     margin: 25px 0;
 }
-
+dialog h3{
+    font-family: var(--fonte-manuscrito);
+    font-size: 3rem;
+    color: var(--marrom-bordo);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.253);
+}
 #btnAgendar{
     position: absolute;
     left: 50%;
@@ -384,16 +405,7 @@ dialog img, dialog h4, dialog p{
     cursor: pointer;
 }
 
-#maisProcedimentos{
-    font-size: 3rem;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.137);
-    animation: pulsante 2s infinite;
-    font-family: var(--fonte-manuscrito);
-    background-color: transparent;
-    color: var(--marrom-bordo);
-}
+
 
 @keyframes pulsante {
     0%{
@@ -418,7 +430,81 @@ dialog img, dialog h4, dialog p{
         transform: rotate(0deg);
     }
 }
+#btnModalProc{
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.137);
+    animation: pulsante 2s infinite;
+    font-family: var(--fonte-manuscrito);
+    background-color: var(--rosa-padrao);
+    color: var(--marrom-bordo);
 
+    border-right: 2px solid #979797;
+    border-bottom: 2px solid #979797;
+    border-left: 2px solid #e3e3e3;
+    border-top: 2px solid #e3e3e3;
+}
+#btnModalProc:hover{
+    border-top: 2px solid #979797;
+    border-left: 2px solid #979797;
+    border-right: 2px solid #e3e3e3;
+    border-bottom: 2px solid #e3e3e3;
+
+}
+#idModalProc{
+    background-color: blue;
+    z-index: 10;
+
+    margin: auto;
+    font-family: var(--fonte-padrao);
+    padding: 50px;
+    padding-top: 15px;
+    background-color: var(--rosa-padrao);
+    border: 3px solid var(--marrom-bordo);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
+    overflow: unset;
+    opacity: 0;
+
+    transition: opacity 0.3s ease-in;
+}
+#idModalProc h3{
+    font-weight: 300;
+}
+#btnFecharModalProc{
+    padding: 5px;
+    position: absolute;
+    right: 25px;
+    color: var(--marrom-bordo);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+div#btnFecharModalProc>span{
+    height:5px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: var(--marrom-bordo);
+}
+#btnFecharModalProc span:nth-child(1){
+    transform: translateY(2.5px) rotate(45deg);
+}
+#btnFecharModalProc span:nth-child(2){
+    transform: translateY(-2.5px) rotate(-45deg);
+}
+#idModalProc > ul > li{
+    margin-bottom: 15px;
+}
+#btnFecharModalProc{
+    top: 30px;
+}
+#idModalProc::backdrop{
+    background-color: rgba(0, 0, 0, 0.774);
+}
+dialog#idModalProc.fade{
+    opacity: 1;
+}
 /* QUEM SOMOS */
 
 #quem-somos{
@@ -479,8 +565,6 @@ dialog img, dialog h4, dialog p{
     font-family: var(--fonte-padrao);
     text-align: justify;
     z-index: 2;
-/* 
-    height: 100vh; */
 }
 #nosso-espaço h2{
     text-align: center;

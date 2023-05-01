@@ -91,12 +91,7 @@ section{
 }
 
 div#page01, 
-div#page02{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "card1 card2" "card3 card4";
-    justify-items: center;
+div#page02{        
     grid-row-gap: 40px;
 
     margin: 40px 0;
@@ -110,7 +105,11 @@ div#page02{
     cursor: pointer;
 
 }
-
+div.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+}
 /* QUEM SOMOS */
 #quem-somos{
     padding: 80px;

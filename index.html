@@ -56,11 +56,13 @@
       <h2>Nossos tratamentos</h2>
       <p>Clique e descubra!</p>
 
+      <input type="checkbox" name="togglerSlider" id="toggler">
+      <label for="toggler" id="toggler1"><</label>
+      <label for="toggler" id="toggler2">></label>
+
       <div id="slider-procedimentos">
 
-        <input type="checkbox" name="togglerSlider" id="toggler">
-        <label for="toggler" id="toggler1"><</label>
-        <label for="toggler" id="toggler2">></label>
+        
 
         <div id="page01"> <!-- Dividido em página para carrossel -->
           <div class="card card1" onclick="alteraTexto(1)">
@@ -116,14 +118,35 @@
         </div>
       </div>
            
-      <button id="maisProcedimentos" onclick="maisProcedimentos()">e muito mais...</button>
-      <dialog id="modalMaisProcedimentos">
-        <ul>
+      <button id="btnModalProc">e muito mais...</button>
 
-        </ul>
-      </dialog>
+      
+
     </section>
      
+    <dialog id="idModalProc">
+      <h3>Mais Procedimentos</h3>
+      <div id="btnFecharModalProc">
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li>Harmonização Facial</li>
+        <li>Meso Perfect (Mesoterapia)</li>
+        <li>Massagem Modeladora</li>
+        <li>Liporedutora Corporal</li>
+        <li>Camuflagem de estrias</li>
+        <li>Manchas e cicatrizes</li>
+        <li>Skin Booster</li>
+        <li>Preenchimento de sulco nasogeniano, lábios e olheiras</li>
+        <li>Harmonização Facial</li>
+        <li>Fios de sustentação malar</li>
+        <li>Fios de PDO</li>
+        <li>Profhilo (Face, pescoço e mãos)</li>
+      </ul>
+      <a href="https://api.whatsapp.com/send?phone=5561995770959&text=Ol%C3%A1%20tudo%20bem%3F%20gostaria%20de%20saber%20mais%20sobre%20%20os%20seus%20procedimentos%20 " target="_blank"><button id="btnAgendar" >Agende agora</button></a>
+    </dialog>
+
     <dialog id="modalDetalhe">
       <div id="btnFechar">
         <span></span>

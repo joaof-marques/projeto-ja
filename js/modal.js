@@ -1,8 +1,26 @@
+/* Modal mais procedimentos */
+
+const modalProc = document.querySelector("#idModalProc")
+const btnModalProc = document.querySelector("#btnModalProc")
+const btnFecharModalProc = document.querySelector("#btnFecharModalProc")
+
+
+btnModalProc.onclick = function () {
+    modalProc.showModal()
+    modalProc.classList.add('fade')
+}
+
+btnFecharModalProc.onclick = function(){    
+    modalProc.classList.remove('fade')
+    modalProc.close()
+}
+/* Modal descrição procedimentos */
+
 const modal = document.querySelector("#modalDetalhe")
 const btnFechar = document.querySelector("#btnFechar")
 
 const txtProce01 = ['imagens/estudio_generica.jpg','BB Glow', 'Para uma pele radiante e uniforme, <strong>BB Glow</strong>!<br>Este tratamento incrível utiliza um sérum especializado que é injetado na camada superior da pele, fornecendo uma base de maquiagem duradoura e uniforme. É seguro e não invasivo, e não requer tempo de recuperação. É perfeito para pessoas ocupadas que querem melhorar a aparência da pele sem sacrificar o tempo ou o conforto.']
-const txtProce02 = ['imagens/estudio_generica.jpg','Bio Placenta', 'Se você está buscando uma solução para melhorar a aparência da sua pele e restaurar sua beleza natural, <strong>Bio Placenta</strong> é a resposta. Este tratamento avançado utiliza ingredientes derivados da placenta para promover a regeneração celular e estimular a produção de colágeno, melhorando a firmeza, a textura e a aparência geral da sua pele.']
+const txtProce02 = ['imagens/estudio_generica.jpg','Bio Placenta', 'Se você está buscando uma solução para melhorar a aparência da sua pele e restaurar sua beleza natural, <strong>Bio Placenta</strong> é a resposta. <br><br>Este tratamento avançado utiliza ingredientes derivados da placenta para promover a regeneração celular e estimular a produção de colágeno, melhorando a firmeza, a textura e a aparência geral da sua pele.']
 const txtProce03 = ['imagens/estudio_generica.jpg','Up Glúteo', 'Se você está buscando um bumbum mais levantado, firme e com uma aparência mais jovem, o <strong>Up Glúteo</strong> é o tratamento que você precisa experimentar!<br><strong>Up Glúteo</strong> é a solução para obter resultados incríveis e duradouros. Este tratamento exclusivo utiliza tecnologia avançada para estimular a produção de colágeno, melhorar a firmeza e tonificar os músculos do bumbum, resultando em um bumbum mais definido e atraente.']
 const txtProce04 = ['imagens/estudio_generica.jpg','Plasma Lifting', 'Com o <strong>Plasma Lifting</strong>, você pode obter resultados incríveis sem a necessidade de cirurgia invasiva. Este tratamento utiliza uma tecnologia avançada para estimular o colágeno em sua pele, resultando em uma aparência mais jovem e radiante. <br> Além disso, o <strong>Plasma Lifting</strong> é seguro e eficaz para todos os tipos de pele. Se você está procurando um tratamento não invasivo que possa fornecer resultados duradouros, não procure mais.']
 const txtProce05 = ['imagens/estudio_generica.jpg','Hyaluron Pen', 'Deseja aumentar o seu bumbum e deixar ele com uma aparência jovem? Parece um sonho e saber que é possível e totalmente indolor é um pote de ouro.<br>Este tratamento revolucionário utiliza uma caneta de ácido hialurônico para criar um efeito lifting e de aumento no bumbum, sem a necessidade de incisões ou anestesia. <br> O resultado é um bumbum mais jovem, com uma aparência natural e duradoura. ']
@@ -11,12 +29,12 @@ const txtProce07 = ['imagens/estudio_generica.jpg','Criolipólise', 'Esse tratam
 const txtProce08 = ['imagens/estudio_generica.jpg','Limpeza de Pele', 'A Limpeza de Pele é uma parte importante da sua rotina de cuidados com a pele. Se você quer ter uma aparência mais fresca, saudável e radiante, a <strong>Limpeza de Pele</strong> pode ser o tratamento ideal para você! <br>Com a nossa <strong>Limpeza de Pele</strong> profissional, você pode remover as impurezas, células mortas e excesso de óleo que obstruem os seus poros, resultando em uma aparência mais suave e uniforme. Além disso, a <strong>Limpeza de Pele</strong> também ajuda a prevenir acne, rugas e outros sinais de envelhecimento.']
 
 function abrirModal(){
-    modal.showModal()    
+    modal.showModal()
     modal.classList.add('fade')
 }
 
 btnFechar.onclick = function(){
-        modal.classList.remove('fade')
+    modal.classList.remove('fade')
     modal.close()
 }
 
@@ -73,3 +91,6 @@ function alteraTexto(opcao){
     
     abrirModal()
 }
+
+
+
