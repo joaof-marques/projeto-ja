@@ -121,8 +121,6 @@ div#btnToggleMenu>span{
     width: 100vw;
     overflow-x: hidden;
 }
-#btnToggleMenu.active{    
-}
 #btnToggleMenu.active :nth-child(1){
     transform: translateY(10px) rotate(45deg);
 }
@@ -286,7 +284,9 @@ div#page02{
 
 
 div.card img{
+    border: 1px solid var(--marrom-bordo);
     width: 100px;
+    height: 100px;
     border-radius: 12px;/* 
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.308); */
 }
@@ -556,7 +556,7 @@ dialog#idModalProc.fade{
     grid-area: txt2;
 }
 #txt3{   
-    text-align: justify;
+    text-align: center;
     grid-area: txt3;
 }
 

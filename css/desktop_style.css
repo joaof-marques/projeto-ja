@@ -133,6 +133,7 @@ nav{
 #nossos-tratamentos p{
     font-size: 2.5rem;
 }
+
 #slider-procedimentos{
     display: flex;
     width: auto;
@@ -170,8 +171,8 @@ div#page01, div#page02{
     transform: scale(1.1);
 }
 
-dialog{
-    width: 50vw;
+dialog#modalDetalhe{
+    width: 600px;
     padding: 40px;
 }
 
@@ -181,7 +182,6 @@ dialog{
     padding-top: 30px;
     height: 95vh;
 }
-
 #quem-somos-conteudo{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
