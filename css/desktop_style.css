@@ -184,8 +184,8 @@ dialog{
 
 #quem-somos-conteudo{
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "img txt1 espec" "img txt2 espec" "img txt3 espec";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img txt1 espec" "img txt2 espec"  "txt3 txt3 txt3";
     align-items: center;
     justify-items: center;
     column-gap: 10px;
@@ -196,10 +196,10 @@ dialog{
     border-radius: 25px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
 }
-#quem-somos p{
-    width: 35vw;
+#txt3{
+    width: 68vw;
+    text-align: center;
 }
-
 /* NOSSO ESPAÇO */
 #nosso-espaço{
     text-align: center;

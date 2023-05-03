@@ -529,8 +529,8 @@ dialog#idModalProc.fade{
 #quem-somos-conteudo{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.3fr 0.3fr 1fr;
-    grid-template-areas: "img txt1" "txt2 txt2" "txt3 txt3" "espec espec";
+    grid-template-rows: 0.5fr 0.3fr 1fr 0.3fr;
+    grid-template-areas: "img txt1" "txt2 txt2" "espec espec" "txt3 txt3" ;
     align-items: center;
     column-gap: 10px;
 }
