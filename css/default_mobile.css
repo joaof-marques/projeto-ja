@@ -379,9 +379,10 @@ div#btnFechar>span{
 #btnFechar span:nth-child(2){
     transform: translateY(-2.5px) rotate(-45deg);
 }
-dialog img{
+dialog#modalDetalhe img{
     width: 230px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);
 }
 
 dialog img, dialog h3, dialog p{
