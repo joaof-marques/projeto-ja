@@ -167,9 +167,11 @@ main{
     right: 50%;
     bottom: 0;
     transform: translate(50%, 0);
-    width: 40vw;
+    width: 55vw;
     max-width: 400px;
     filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.295));
+
+    border: 2px solid red;
 }
 @media screen and (max-height: 736px){
     #imagem-welcome{
@@ -271,7 +273,7 @@ div#page02{
 }
 .card{
     padding: 10px;
-    width: 32vw;
+    width: 35vw;
     height: 180px;
     border-radius: 12px;
     cursor: pointer;
@@ -337,7 +339,19 @@ dialog#modalDetalhe{
     transition: opacity 0.3s ease-in;
 }
 
+dialog#modalDetalhe img{
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);
+}
 
+dialog#modalDetalhe h3{
+    font-family: var(--fonte-manuscrito);
+    font-size: 2.5rem;
+    color: var(--marrom-bordo);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.253);
+    font-weight: 200;
+}
 
 dialog#modalDetalhe p{
     text-align: justify;
@@ -379,11 +393,7 @@ div#btnFechar>span{
 #btnFechar span:nth-child(2){
     transform: translateY(-2.5px) rotate(-45deg);
 }
-dialog#modalDetalhe img{
-    width: 230px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);
-}
+
 
 dialog img, dialog h3, dialog p{
     margin: 25px 0;
@@ -650,11 +660,11 @@ dialog#idModalProc.fade{
     z-index: 3;
 }
 #slider li:nth-child(1) label {
-    left: calc(50% - 45px);
+    left: calc(50% - 22px);
 }
 
 #slider li:nth-child(2) label {
-    left: calc(50% - 15px);
+    left: calc(50% + 22px);
 }
 
 #slider li:nth-child(3) label {
