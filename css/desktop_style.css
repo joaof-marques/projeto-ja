@@ -137,6 +137,7 @@ nav{
 #slider-procedimentos{
     display: flex;
     width: auto;
+    transform: translate(0);
 }
 #botoes{
     display: grid;
@@ -174,6 +175,10 @@ div#page01, div#page02{
 dialog#modalDetalhe{
     width: 600px;
     padding: 40px;
+    padding-top: 0;
+}
+dialog#modalDetalhe img{
+    width: 200px;
 }
 
 /* QUEM SOU */

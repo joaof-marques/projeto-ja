@@ -170,8 +170,6 @@ main{
     width: 55vw;
     max-width: 400px;
     filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.295));
-
-    border: 2px solid red;
 }
 @media screen and (max-height: 736px){
     #imagem-welcome{
@@ -235,7 +233,7 @@ div#page02{
     margin: 40px 0;
     padding: 15px;
 
-    transition: transform 0.4s ease-in-out; 
+    transition: transform 0.4s ease-in-out;
 }
 
 #slider-procedimentos{
@@ -243,6 +241,7 @@ div#page02{
     width: 100vw;
     display: flex;
     overflow: auto;
+    
 }
 #slider-procedimentos::-webkit-scrollbar{
     height: 0;
@@ -265,12 +264,12 @@ div#page02{
     top: calc(45% - 3rem);
     right: 10px;
 }
-#toggler:checked ~ #slider-procedimentos #page01{
+/* #toggler:checked ~ #slider-procedimentos #page01{
     transform: translate(-100%);
 } 
 #toggler:checked ~ #slider-procedimentos #page02{
     transform: translate(-100%);
-}
+} */
 .card{
     padding: 10px;
     width: 35vw;
@@ -328,6 +327,7 @@ dialog#modalDetalhe{
     width: 80vw;
     font-size: 1.2rem;
     padding: 20px;
+    padding-top: 0;
     background-color: var(--rosa-padrao);
     border: 3px solid var(--marrom-bordo);
     border-radius: 20px;
@@ -343,6 +343,7 @@ dialog#modalDetalhe img{
     width: 100px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);
+    margin: 25px 0;
 }
 
 dialog#modalDetalhe h3{
@@ -356,6 +357,7 @@ dialog#modalDetalhe h3{
 dialog#modalDetalhe p{
     text-align: justify;
     font-size: 1rem;
+    margin: 25px 0 35px 0;
 }
 @media screen and (max-height: 600px){
     dialog#modalDetalhe p{
@@ -376,6 +378,7 @@ dialog#modalDetalhe::backdrop{
     padding: 5px;
     position: absolute;
     right: 25px;
+    top: 25px;
     color: var(--marrom-bordo);
     cursor: pointer;
     display: flex;
@@ -394,10 +397,6 @@ div#btnFechar>span{
     transform: translateY(-2.5px) rotate(-45deg);
 }
 
-
-dialog img, dialog h3, dialog p{
-    margin: 25px 0;
-}
 dialog h3{
     font-family: var(--fonte-manuscrito);
     font-size: 3rem;
@@ -417,8 +416,12 @@ dialog h3{
     color: white;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.281);
     cursor: pointer;
+    transition: 0.1s ease-in;
 }
 
+#btnAgendar:hover{
+    transform: translate(-50%, 50%) scale(1.1);
+}
 
 
 @keyframes pulsante {
