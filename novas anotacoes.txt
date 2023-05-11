@@ -1,4 +1,4 @@
-Galaxy A52s - Problema de texto overflowing nos modais de procedimentos
+Galaxy A52s - Problema de texto overflowing nos modais de procedimentos ok??
 
 Ajustar responsividade para 1366x768
 ajuste icone plasma lifting
