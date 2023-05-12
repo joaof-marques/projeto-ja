@@ -80,6 +80,7 @@ nav{
     width: auto;
     height: 80vh;
     right: 25vw;
+    border: 2px solid red;
 }
 #logo-welcome{
     bottom: 50vh;
