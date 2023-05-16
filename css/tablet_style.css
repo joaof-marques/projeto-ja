@@ -146,9 +146,12 @@ div#quem-somos-conteudo img{
     padding-top: 20px;
 }
 
+.slider-container{
+    margin-bottom: 30px;
+}
+
 #slider{
     margin: auto;
-    height: 450px;
 }
 
 #nosso-espaço p{

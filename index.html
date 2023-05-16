@@ -18,6 +18,7 @@
 
     <script src="js/modal.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/slider_nosso_espaco.js" defer></script>
 </head>
 <body>
 
@@ -194,31 +195,36 @@
     </section>
     <section id="nosso-espaço">
       <h2>Nosso espaço</h2>
-      <ul id="slider">
-        <li> 
-          <input type="radio" id="slide1" name="slide" checked>
-          <label for="slide1"></label>
-          <img src="imagens/clinica/clinica01.jpg" alt="Nosso estúdio">
-        </li>
-        <li> 
-          <input type="radio" id="slide2" name="slide">
-          <label for="slide2"></label>
-          <img src="imagens/clinica/clinica02.jpg" alt="Nosso estúdio">
-        </li>
-        <li> 
-          <input type="radio" id="slide3" name="slide">
-          <label for="slide3"></label>
-          <img src="imagens/clinica/clinica03.jpg" alt="Nosso estúdio">
-        </li>
-        <!-- <li> 
-          <input type="radio" id="slide4" name="slide">
-          <label for="slide4"></label>
-          <img src="imagens/clinica/sala-atendimento-5.jpg" alt="Nosso estúdio">
-        </li> -->  
+      <div class="slider-container">
+        <button class="arrow-left control"><</button>
+        <button class="arrow-right control">></button>
+        <ul id="slider">
+          
+          <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img src="imagens/clinica/clinica01.jpg" alt="Nosso estúdio" class="item current-item">
+          </li>
+          <li>
+            <input type="radio" id="slide2" name="slide">
+            <label for="slide2"></label>
+            <img src="imagens/clinica/clinica02.jpg" alt="Nosso estúdio" class="item current-item">
+          </li>
+          <li>
+            <input type="radio" id="slide3" name="slide">
+            <label for="slide3"></label>
+            <img src="imagens/clinica/clinica03.jpg" alt="Nosso estúdio" class="item current-item">
+          </li>
+          <!-- <li>
+            <input type="radio" id="slide4" name="slide">
+            <label for="slide4"></label>
+            <img src="imagens/clinica/sala-atendimento-5.jpg" alt="Nosso estúdio">
+          </li> -->
         
-        <!--Input de mais duas imagens para o slider. Ajustar também o posicionamento dos labels no css 
-          (#slider li:nth-child(1) label ) -->
-      </ul>
+          <!--Input de mais duas imagens para o slider. Ajustar também o posicionamento dos labels no css
+            (#slider li:nth-child(1) label ) -->
+        </ul>
+      </div>
       <p>O objetivo do <strong>Espaço Janaína Amaral</strong> é realçar o que já é belo. Nós levamos praticidade para o seu dia a dia, conosco é fácil acordar impecável. <br> <br>
       Nossos tratamentos são <strong>seguros e eficazes</strong>. Realizados com muita atenção e zelo com o seu bem estar! 
       </p>

@@ -616,78 +616,57 @@ dialog#idModalProc.fade{
     color: var(--marrom-bordo);
 }
 
+.slider-container{
+    position: relative;
+    margin: auto;
+    width:90vw;
+}
+.arrow-left,
+.arrow-right{
+    font-family: var(--fonte-manuscrito);
+    position: absolute;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    font-size: 8rem;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+
+    -webkit-text-stroke: 1px var(--marrom-bordo);
+    text-stroke: 1px var(--marrom-bordo);
+}
+.arrow-right{
+    right: 0px;
+    left: auto;;
+}
 #slider{
-    display: block;
+    display: flex;
+    flex-flow: row nowrap;
     background-color: #ffffff;
     width:90vw;
     margin-bottom: 70px;
+    border-radius: 10px;
+    aspect-ratio: 1.78/1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.342);
 
-    aspect-ratio: 1.77/1;
-    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 #slider li{
-    list-style: none;
-    position: absolute;
+    list-style-type: none;
 }
 #slider img{
     width: 90vw;
-    border-radius: 15px;
-    vertical-align: top;
-    z-index: 3;
-    border: 2px solid var(--rosa-padrao);
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: 0.4s ease-in-out;
-    /* 
-    display: block;   
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);  */
 }
 #slider input{
     display: none;
 }
-#slider label{
-    border: 2px solid var(--rosa-padrao);
-    background-color: #f7f7f7;
-    cursor: pointer;
-
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-
-    display: block;
-    position: absolute;
-    left: 0px;
-    bottom: 15px;
-
-    z-index: 3;
-}
-#slider li:nth-child(1) label {
-    left: calc(50% - 30px);
-}
-
-#slider li:nth-child(2) label {
-    left: calc(50%);
-}
-
-#slider li:nth-child(3) label {
-    left: calc(50% + 30px);
-}
-
-#slider li:nth-child(4) label{
-    left: calc(50% + 45px);
-}
-
-#slider li input:checked ~ label{
-    background-color:  var(--rosa-padrao);
-}
-
-#slider li input:checked ~ img{
+.current-item{
     opacity: 1;
-    visibility: visible;
-    z-index: 3;
 }
+
 /* Contato */
 
 #contato{

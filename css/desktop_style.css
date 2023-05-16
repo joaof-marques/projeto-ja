@@ -214,14 +214,26 @@ dialog#modalDetalhe img{
     text-align: center;
     height: 95vh;
 }
+.slider-container{
+    width: 50vw;
+}
 #slider{
     margin: 0 auto 70px auto;
     width: 50vw;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.342);
 }
 #slider img{
     width: 50vw;
 }
+.arrow-left,
+.arrow-right{
+    width: 70px;
+}
+
 @media screen and (max-height: 700px){
+    .slider-container{
+        width: 40vw;
+    }
     #slider{
         width: 40vw;
     }
