@@ -80,7 +80,6 @@ nav{
     width: auto;
     height: 80vh;
     right: 25vw;
-    border: 2px solid red;
 }
 #logo-welcome{
     bottom: 50vh;
@@ -186,21 +185,25 @@ dialog#modalDetalhe img{
 
 #quem-somos{
     padding-top: 30px;
-    height: 95vh;
+}
+#quem-somos h2{
+    margin-bottom: 20px;
 }
 #quem-somos-conteudo{
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.7fr;
     grid-template-areas: "img txt1 espec" "img txt2 espec"  "txt3 txt3 txt3";
     align-items: center;
     justify-items: center;
     column-gap: 10px;
-    margin-top: 50px;
 }
 #quem-somos img{
     width: 20vw;
     border-radius: 25px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
+}
+#quem-somos p {
+    margin-top: 0px;
 }
 #txt3{
     width: 68vw;
