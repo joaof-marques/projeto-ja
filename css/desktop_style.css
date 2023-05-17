@@ -87,36 +87,21 @@ nav{
     width: 300px;
 
 
-    /* position: fixed;
-    left: 50%;
-    bottom: 80vh;
-    transform: translate(-50%, 0);
-    width: 170px; */
 }
 
 #p1, #p2 {
     left: 30%;
     bottom: 30vh;
 
-    /* position: fixed;
-    bottom: 65vh;
-    left: 50%;
-    width: 80vw;
-    text-align: center;
-    transform: translateX(-50%);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.329); */
+    
 }
 #p1{
-    font-size: 3rem;
-
-    /* font-family: var(--fonte-manuscrito);
-    font-size: 1.8rem; */
+    font-size: 3rem;   
 }
 #p2{
     font-size: 1.2rem;
     transform: translate(-50%, 100px);
-    /* text-transform: uppercase;
-    font-size: 0.8rem; */
+    
 }
 
 /* NOSSOS TRATAMENTOS */
@@ -249,11 +234,18 @@ dialog#modalDetalhe img{
 #logo_whatsapp{
     display: none;
 }
+#logo_maps{
+    display: none;
+}
 #qrcode_whatsapp{
     display: inherit;
     height: 180px;
 }
 #qrcode_instagram{
+    display: inherit;
+    height: 180px;
+}
+#qrcode_maps{
     display: inherit;
     height: 180px;
 }

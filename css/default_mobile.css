@@ -673,9 +673,17 @@ dialog#idModalProc.fade{
     background-color: var(--marrom-bordo);
     color: var(--rosa-padrao);
     text-align: center;
-    padding: 30px;
+    padding-block: 30px;
     z-index: 2;
 }
+
+.logo-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: fit-content;
+}
+
 #contato p{
     width: 80vw;
     margin: auto;
@@ -689,10 +697,16 @@ dialog#idModalProc.fade{
 #logo_whatsapp{
     height: 90px;
 }
+#logo_maps{
+    height: 90px;
+}
 #qrcode_whatsapp{
     display: none;
 }
 #qrcode_instagram{
+    display: none;
+}
+#qrcode_maps{
     display: none;
 }
 
